@@ -67,6 +67,7 @@ if GetOption('test'):
 
 # Visionipc
 vipc_sources = [
+  'visionipc/cl_helpers.cc',
   'visionipc/visionipc_server.cc',
   'visionipc/visionipc_client.cc',
 ]
@@ -80,4 +81,4 @@ vipc_objects = env.SharedObject(vipc_sources)
 vipc = env.Library('visionipc', vipc_objects)
 
 
-env.Program('visionipc/test', ['visionipc/test.cc'], LIBS=[vipc, 'OpenCL'])
+env.Program('visionipc/test', ['visionipc/test.cc'], LIBS=[vipc, 'OpenCL', 'pthread'])
