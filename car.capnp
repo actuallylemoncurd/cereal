@@ -116,9 +116,9 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     canErrorPersistentDEPRECATED @83;
     startupWhitePandaDEPRECATED @82;
     
-    pqTimebombWarn @93;
-    pqTimebombBypassing @94;
-    pqTimebombBypassed @95;
+    pqTimebombWarn @92;
+    pqTimebombBypassing @93;
+    pqTimebombBypassed @94;
   }
 }
 
